@@ -14,7 +14,8 @@
         lt_gt_pipe: lt_gt_pipe {
             compatible = "zmk,behavior-mod-morph";
             label = "LT_GT_PIPE";
-            bindings = <&kp LSGT>, <&kp LS(LSGT)>, <&kp RA(LSGT)>;
+	    #binding-cells = <0>;
+            bindings = <&kp LSGT &kp LS(LSGT) &kp RA(LSGT)>;
             mods = <MOD_LSFT MOD_RALT>;
         };
     };
