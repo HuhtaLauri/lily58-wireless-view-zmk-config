@@ -19,12 +19,14 @@
 
             mods = <(MOD_LSFT)>;
         };
-	tick_qmark: tick_qmark {
-	    compatible = "zmk,behavior-mod-morph";
-	    #binding-cells = <0>;
-	    bindings = <&kp FI_SINGLE_QUOTE>, <&kp FI_QUESTION>;
-	    mods = <MOD_LSFT>;
-	};
+
+        tick_qmark: tick_qmark {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FI_SINGLE_QUOTE>, <&kp FI_QUESTION>;
+
+            mods = <MOD_LSFT>;
+        };
     };
 };
 
@@ -42,11 +44,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                         &kp N6         &kp N7  &kp N8     &kp N9   &kp N0           &tick_qmark
-&kp TAB    &kp Q   &kp W   &kp E     &kp R         &kp T                          &kp Y          &kp U   &kp I      &kp O    &kp P            &kp FI_SINGLE_QUOTE
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F         &kp G                          &kp H          &kp J   &kp K      &kp L    &kp FI_O_UMLAUT  &kp FI_A_UMLAUT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V         &kp B   &kp FI_LEFT_BRACKET     &kp FI_RIGHT_BRACKET  &kp N          &kp M   &kp COMMA  &kp DOT  &kp FI_MINUS        &lt_gt
-                           &kp LGUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp RET   &kp BACKSPACE  &kp RIGHT_ALT   &mo 2
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                                               &kp N6         &kp N7         &kp N8     &kp N9   &kp N0           &tick_qmark
+&kp TAB    &kp Q   &kp W   &kp E     &kp R         &kp T                                                &kp Y          &kp U          &kp I      &kp O    &kp P            &kp FI_SINGLE_QUOTE
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F         &kp G                                                &kp H          &kp J          &kp K      &kp L    &kp FI_O_UMLAUT  &kp FI_A_UMLAUT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V         &kp B   &kp FI_LEFT_BRACKET    &kp FI_RIGHT_BRACKET  &kp N          &kp M          &kp COMMA  &kp DOT  &kp FI_MINUS     &lt_gt
+                           &kp LGUI  &kp LEFT_ALT  &mo 1   &kp SPACE              &kp RET               &kp BACKSPACE  &kp RIGHT_ALT  &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -62,11 +64,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &kp FI_TILDE  &kp FI_ASTERISK
-&trans      &trans        &trans        &trans        &trans        &trans        &kp FI_LEFT_BRACE    &kp FI_RIGHT_BRACE  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp FI_UNDERSCORE  &kp FI_PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                           &trans          &trans          &trans        &trans           &trans             &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                                 &kp F7          &kp F8          &kp F9        &kp F10          &kp F11            &kp F12
+&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                                              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp FI_TILDE       &kp FI_ACUTE
+&trans      &trans        &trans        &trans        &trans        &trans        &kp FI_LEFT_BRACE    &kp FI_RIGHT_BRACE  &trans          &kp MINUS       &kp KP_PLUS   &kp LBRC         &kp FI_UNDERSCORE  &kp FI_PIPE
+                                        &trans        &trans        &trans        &trans               &trans              &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
